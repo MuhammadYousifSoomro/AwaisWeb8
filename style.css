@@ -1,0 +1,1424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LIGHT MODE */
+body {
+    background: #f8fafc;
+    color: #000000;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background: #000000 !important;
+    color: #e5e7eb !important;
+}
+
+.navbar .nav-link,
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .dropdown-item:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    /* some bootstrap use shadow for focus */
+    outline: none !important;
+}
+
+
+/* SECTIONS */
+/* .dark-mode .plumber,
+.dark-mode .electrician,
+.dark-mode .carpenter,
+.dark-mode .painting, */
+/* .dark-mode .trust, */
+/* .dark-mode .plumber1, */
+.dark-mode header,
+/* .dark-mode .menu , */
+/* .dark-mode .footer ,
+.dark-mode .footer-container,
+.dark-mode .footer-box ,
+.dark-mode .footer-bottom , */
+/* .dark-mode .header-top, */
+.dark-mode marquee p,
+/* .dark-mode .card1 , */
+/* .dark-mode .service , */
+.dark-mode #darkToggle {
+    background: #6e6f7048 !important;
+    color: #e5e7eb !important;
+}
+
+.dark-mode .menu {
+    color: #e5e7eb !important;
+    background: #0891b2;
+}
+
+
+.dark-mode .card1 {
+    background: #0c0c0caf !important;
+    color: #e5e7eb !important;
+}
+
+
+
+/* header */
+header {
+    display: block;
+    align-items: right;
+    justify-content: flex-end;
+    /* left alignment */
+    gap: 20px;
+    /* space between icon and title */
+    /* padding: 10px; */
+    background: linear-gradient(135deg, #0ea5a4, #0891b2);
+    color: #fff;
+    /* position: sticky; */
+    scroll-behavior: smooth;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 10%;
+}
+
+header h1 {
+    /* background: linear-gradient(135deg, #0ea5a4, #0891b2); */
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    padding: 30px 15px;
+    text-align: center;
+    right: 10%;
+    left: 0%;
+    font-size: clamp(0.5rem, 4vw, 1.9rem);
+}
+
+#darkToggle {
+    position: fixed;
+    z-index: 3;
+    left: 75%;
+    width: 200px;
+    border: solid 2px #5fe98d79;
+    /* bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;*/
+    font-size: clamp(0.7rem, 3vw, 1.2rem);
+    /*border: none;
+    border-radius: 8px;
+    background-color: #0ea5a4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #0ea5a4, #0891b2);
+}
+
+.header-top button {
+    font-size: clamp(0.5rem, 3vw, 1.2rem);
+    padding: 6px 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0891b2;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header marquee p {
+    font-size: clamp(0.7rem, 4vw, 1.5rem);
+    font-weight: 500;
+    color: #334155;
+    background-color: #bbe7bfdc;
+    width: fit-content;
+}
+
+#menubtn {
+    position: absolute;
+    text-align: left;
+    left: 10px;
+    top: 0px;
+    margin-bottom: 100px;
+
+
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: clamp(1.9rem, 7vw, 4.7rem);
+    cursor: pointer;
+}
+
+#menu {
+    list-style: none;
+    margin-top: 10px;
+    text-align: left;
+    position: relative;
+    /* ya absolute / fixed */
+    /* z-index: -3; */
+
+
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    /* color: #d7d7e0;              header dark ho to white */
+    position: relative;
+    padding: 6px 0;
+    transition: all 0.3s ease;
+
+}
+
+#menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffffff;
+    /* header dark ho to white */
+    transition: width 0.7s ease;
+}
+
+#menu li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffffff;
+    /* header dark ho to white */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* background-color: #fff; */
+    background-color: linear-gradient(135deg, #0ea5a4, #0891b2);
+    color: white;
+    width: fit-content;
+    gap: 210px;
+    border-radius: 0 0 8px 8px;
+}
+
+.trust {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px auto;
+    /* font-size: clamp(0.5rem, 3vw, 2.5rem); */
+
+}
+
+.trust h2 {
+    font-size: clamp(1.0rem, 4vw, 2.8rem);
+    margin-bottom: 15px;
+    text-align: center;
+    animation: headingAnim 1s ease-in-out forwards;
+
+}
+
+@keyframes headingAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.trust li {
+    text-decoration: none;
+    font-size: clamp(0.7rem, 4vw, 1.7rem);
+    text-align: left;
+    animation: headingAnim 1s ease-out forwards;
+    /* color: palevioletred; */
+    list-style: none;
+}
+
+.electrician,
+.plumber,
+.carpenter,
+.painting {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    /* font-size: clamp(1.0rem, 4vw, 2.8rem); */
+
+}
+
+.plumber1 {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    /* font-size: clamp(1.0rem, 4vw, 2.8rem); */
+
+}
+
+.plumber1 h2 {
+    font-size: clamp(1.0rem, 4vw, 2.8rem);
+    margin-bottom: 15px;
+    text-align: center;
+    animation: headingAnim 1s ease-in-out forwards;
+
+}
+
+.plumber1 p {
+    font-size: clamp(0.7rem, 4vw, 1.7rem);
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: justify;
+    animation: slideUp 2s ease-out forwards;
+    width: 100%;
+    max-width: 800px;
+}
+
+.plumber1 img {
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 300px;
+
+    height: auto;
+    margin: 0px auto;
+    border-radius: 8px;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.plumber1 img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* professional lift effect */
+    transform: scale(1.1) rotate(20deg) translateY(-10px);
+}
+
+.plumber1 button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: clamp(0.7rem, 4vw, 1.5rem);
+    background-color: #0ea5a4;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    border: solid 3px #8db8db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plumber1 button a {
+    text-decoration: none;
+    color: #ffffffa6;
+}
+
+.plumber1 button:hover {
+    background-color: #0891b2;
+    border: solid 3px #022d50;
+    border-radius: 20px;
+}
+
+.card1 {
+    /* border: solid 2px black; */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+    padding: 20px;
+    /* margin: 20px; */
+    /* background-color: #1d497c41; */
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* gap: 20px; */
+}
+
+.electrician button,
+.plumber button,
+.carpenter button,
+.painting button {
+    display: block;
+    margin-top: 30px;
+    /* margin: 20px auto; */
+    padding: 10px 20px;
+    font-size: clamp(0.7rem, 4vw, 1.5rem);
+    background-color: #0ea5a4;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    border: solid 3px #8db8db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact4 {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+}
+
+.contact4 img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.contact4 h3 {
+    font-size: 1rem;
+    color: green;
+}
+
+.electrician button a,
+.plumber button a,
+.carpenter button a,
+.painting button a {
+    text-decoration: none;
+    color: #ffffffa6;
+}
+
+.electrician button:hover,
+.plumber button:hover,
+.carpenter button:hover,
+.painting button:hover {
+    background-color: #0891b2;
+    border: solid 3px #022d50;
+    border-radius: 20px;
+}
+
+.electrician h2,
+.plumber h2,
+.carpenter h2,
+.painting h2 {
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+    margin-bottom: 15px;
+    text-align: left;
+    animation: headingAnim 1s ease-in-out forwards;
+
+}
+
+.electrician p,
+.plumber p,
+.carpenter p,
+.painting p {
+    font-size: clamp(0.7rem, 4vw, 1.7rem);
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: justify;
+    animation: slideUp 2s ease-out forwards;
+    width: 100%;
+    max-width: 800px;
+}
+
+.problem {
+    margin-right: 10px;
+}
+
+.electrician img,
+.plumber img,
+.carpenter img,
+.painting img {
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 270px;
+
+    height: auto;
+    margin: 0px auto;
+    border-radius: 8px;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.electrician img:hover,
+.plumber img:hover,
+.carpenter img:hover,
+.painting img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* professional lift effect */
+    transform: scale(1.1) rotate(20deg) translateY(-10px);
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 50px 20px 0;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    /* width: 100%; */
+}
+
+/* DESKTOP / LAPTOP */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    /* ✅ DESKTOP = ROW */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-box {
+    flex: 1;
+    /* min-width: 200px auto; */
+    width: 50%;
+    max-width: 800px;
+    background-color: #b2c0b40a;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.footer-box h3 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 15px;
+    color: #22c55e;
+    text-align: center;
+}
+
+.footer-box p {
+    text-align: center;
+    font-size: clamp(0.8rem, 3vw, 1.0rem);
+    line-height: 1.6;
+    color: #cbd5f5;
+    margin-bottom: 20px;
+
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-box li {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin-bottom: 10px;
+    list-style: none;
+    color: white;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: color 0.3s ease;
+    /* margin: 100px; */
+}
+
+.footer-box ul li a:hover {
+    color: #22c55e;
+}
+
+/* bottom bar */
+.footer-bottom {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    background: #020617;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+    color: #94a3b8;
+    margin: 20px;
+}
+
+/* ================= MEDIA QUERY (MOBILE) ================= */
+
+@media (max-width: 900px) {
+    .card1 {
+        /* border: solid 2px black; */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+        padding: 20px;
+        /* margin: 20px; */
+        background-color: #dae2eb41;
+        display: block;
+        ;
+        /* gap: 20px; */
+    }
+
+    
+    .electrician h2,
+    .plumber h2,
+    .carpenter h2,
+    .painting h2 {
+        font-size: clamp(1.5rem, 4vw, 2.8rem);
+        margin-bottom: 15px;
+        text-align: center;
+        animation: headingAnim 1s ease-in-out forwards;
+
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #0ea5a4, #0891b2);
+    }
+
+    .electrician,
+    .plumber,
+    .carpenter,
+    .painting {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        text-align: center;
+        margin: 0px auto;
+        padding: 20px;
+        /* font-size: clamp(1.0rem, 4vw, 2.8rem); */
+
+    }
+
+    .electrician img,
+    .plumber img,
+    .carpenter img,
+    .painting img {
+        display: block;
+        /* justify-content: center;
+    align-items: center; */
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        max-height: 450px;
+
+        height: auto;
+        margin: 0px auto;
+        border-radius: 8px;
+        animation: slideUp 1s ease-in-out forwards;
+    }
+
+    .electrician,
+    .plumber,
+    .carpenter,
+    .painting {
+        display: flex;
+    }
+
+    .electrician img,
+    .plumber img,
+    .carpenter img,
+    .painting img {
+        width: 160px;
+        height: 170px;
+    }
+
+    .electrician h2,
+    .plumber h2,
+    .carpenter h2,
+    .painting h2 {
+        font-size: clamp(1rem, 3vw, 2.8rem);
+        text-align: left;
+    }
+
+    .electrician p,
+    .plumber p,
+    .carpenter p,
+    .painting p {
+        font-size: clamp(0.5rem, 3vw, 1.7rem);
+
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    .electrician,
+    .plumber,
+    .carpenter,
+    .painting {
+        display: flex;
+    }
+
+    .electrician img,
+    .plumber img,
+    .carpenter img,
+    .painting img {
+        width: 70px;
+        height: 70px;
+    }
+
+   
+
+    .electrician h2,
+    .plumber h2,
+    .carpenter h2,
+    .painting h2 {
+        font-size: clamp(1rem, 2vw, 2.8rem);
+        text-align: left;
+    }
+
+    .electrician p,
+    .plumber p,
+    .carpenter p,
+    .painting p {
+        font-size: clamp(0.5rem, 2vw, 1.7rem);
+    }
+
+    #darkToggle {
+        position: fixed;
+        z-index: 3;
+        left: 55%;
+        width: 40px;
+        margin-top: -40px;
+        border: solid 2px #5fe98d79;
+        /* bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: clamp(0.7rem, 3vw, 1.2rem);
+    border: none;
+    border-radius: 8px;
+    background-color: #0ea5a4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; */
+    }
+
+    .dark-mode {
+        background: #000000 !important;
+        color: #e5e7eb !important;
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    .header-top {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #0ea5a4, #0891b2);
+    }
+
+    .electrician,
+    .plumber,
+    .carpenter,
+    .painting {
+        display: flex;
+    }
+
+    .contact4 {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .contact4 img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    .contact4 h3 {
+        font-size: 1rem;
+        color: green;
+    }
+
+    .electrician img,
+    .plumber img,
+    .carpenter img,
+    .painting img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .electrician h2,
+    .plumber h2,
+    .carpenter h2,
+    .painting h2 {
+        font-size: clamp(1rem, 3vw, 2.8rem);
+        text-align: left;
+    }
+
+    .electrician p,
+    .plumber p,
+    .carpenter p,
+    .painting p {
+        font-size: clamp(0.5rem, 3vw, 1.7rem);
+
+    }
+
+    #darkToggle {
+        position: fixed;
+        z-index: 3;
+        left: 67%;
+        width: 170px;
+        margin-top: -40px;
+        border: solid 2px #5fe98d79;
+        /* bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: clamp(0.7rem, 3vw, 1.2rem);
+    border: none;
+    border-radius: 8px;
+    background-color: #0ea5a4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; */
+    }
+
+    .footer {
+        text-align: center;
+        padding: 40px 15px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        /* ✅ MOBILE = ONE COLUMN */
+        align-items: center;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+}
+
+/* ================= END FOOTER ================= */
+
+/* ==============electrician==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+@media (max-width:600px) {
+
+    #darkToggle {
+        left: 170px;
+        width: 120px;
+        border-radius: 50px;
+    }
+    .contact4 {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .contact4 img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .contact4 h3 {
+        font-size: clamp(0.6rem, 2.5vw, 1.0rem);
+        color: green;
+    }
+
+}
+@media (max-width:800px) {
+
+   /* #darkToggle {
+        left: 170px;
+        width: 120px;
+        border-radius: 50px;
+    }
+    .contact4 {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .contact4 img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .contact4 h3 {
+        font-size: clamp(0.6rem, 2.5vw, 1.5rem);
+        color: green;
+    } */
+}
+
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.dark-mode .card {
+    background: #464646af !important;
+    color: #e5e7eb !important;
+}
+
+.dark-mode .gallery,
+.dark-mode .gallery h2,
+.dark-mode .gallery p,
+.dark-mode .step {
+    background: #121212 !important;
+    color: #e5e7eb !important;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.hero-btns .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #0891b2;
+    border-radius: 30px;
+    transition: 0.3s;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.hero-btns .btn:hover {
+    transform: translateY(-5px);
+    background: #0891b2;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+/* ELECTRICIAN INTRO TEXT */
+.intro {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px 25px;
+    background: #ffffff;
+    border-left: #0891b2 solid 6px;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    line-height: 1.9;
+    margin-top: 10%;
+    text-align: justify;
+
+}
+
+.intro h1 {
+    font-size: clamp(1.0rem, 4vw, 2.8rem);
+    margin-bottom: 20px;
+    color: #203a43;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 18px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.intro strong {
+    color: #203a43;
+    font-weight: 600;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+/* SMALL HEADING (OPTIONAL) */
+.intro h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #222;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+/* MOBILE FRIENDLY */
+@media(max-width:600px) {
+    .intro {
+        /* padding:; */
+        margin-top: 90PX;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .intro p {
+        /* padding-top: 10%; */
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+@media(max-width:1000px) {
+    .intro {
+        /* padding:; */
+        margin-top: 90PX;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .intro p {
+        /* padding-top: 10%; */
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+/* SERVICES */
+.services {
+    padding: 60px 5px;
+    text-align: center;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media (max-width:600px) {
+    .service-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+
+    }
+
+    .card {
+        background: #fff;
+        padding: 0px;
+
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        font-size: clamp(0.3rem, 2.5vw, 2.5rem);
+    }
+
+
+}
+
+.card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* WHY US */
+.why-us {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.dark-mode .why-us {
+    background: #464646af !important;
+    color: #e5e7eb !important;
+}
+
+.why-us h2 {
+    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    margin-bottom: 20px;
+    /* color: #000000; */
+}
+
+.why-us ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.why-us li {
+    padding: 10px;
+    font-size: clamp(0.7rem, 4vw, 1.5rem);
+}
+
+/* PROCESS */
+.process {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.process h2 {
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+    margin-bottom: 20px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA */
+.cta {
+    background: #203a43;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.cta h2 {
+    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    margin-bottom: 15px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.cta p {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    margin-bottom: 20px;
+    animation: headingAnim 1s ease-in-out forwards;
+}
+
+.cta .btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #25db53;
+    border-left: #000000 solid 3px;
+    border-bottom: #000000 solid 6px;
+}
+
+.cta .btn:hover {
+    background: #0891b2;
+    /* border: 3px solid #022d50; */
+    border-left: #000000 solid 3px;
+    border-bottom: #000000 solid 6px;
+}
+
+/* GALLERY SECTION */
+.gallery {
+    padding: 70px 20px;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.gallery p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+}
+
+/* GRID */
+.gallery-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width:600px) {
+    .gallery-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+
+    }
+}
+
+.dark-mode .cta {
+    background: #46464633 !important;
+    color: #e5e7eb !important;
+}
+
+/* IMAGE CARD */
+.img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* IMAGE */
+.img-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* HOVER ZOOM */
+.img-box:hover img {
+    transform: scale(1.18);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
+    display: flex;
+    align-items: flex-end;
+    padding: 22px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* OVERLAY SHOW */
+.img-box:hover .overlay {
+    opacity: 1;
+}
+
+/* GLOW EFFECT */
+.img-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    box-shadow: 0 0 0 rgba(255, 152, 0, 0.6);
+    transition: 0.4s;
+}
+
+.img-box:hover::after {
+    box-shadow: 0 0 25px rgba(255, 152, 0, 0.7);
+}
+
+
+/* MOBILE FIX */
+@media(max-width:600px) {
+    .img-box img {
+        height: 220px;
+    }
+}
+
+/* for contact page */
+/* ===== CONTACT PAGE PRO RESPONSIVE CSS ===== */
+/* ===== ADVANCED CONTACT SECTION ===== */
+.contact-advanced {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.contact-left h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-left p {
+    line-height: 1.8;
+    font-size: clamp(15px, 2vw, 18px);
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+/* INFO CARDS */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+}
+
+.contact-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px;
+    border-radius: 14px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-card span {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-card h4 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* RIGHT SIDE SOCIAL */
+.contact-right {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-right h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* SOCIAL BUTTONS */
+.social-btn {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-size: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.social-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* COLORS */
+.whatsapp {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+.facebook {
+    background: linear-gradient(135deg, #1877f2, #0d65d9);
+}
+
+.tiktok {
+    background: linear-gradient(135deg, #000, #ff0050);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:500px) {
+    .contact-advanced {
+        padding: 60px 15px;
+    }
+
+    .social-btn {
+        font-size: 16px;
+        padding: 14px;
+    }
+}

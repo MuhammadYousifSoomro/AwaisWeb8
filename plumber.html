@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services in Karachi</title>
+    <link rel="stylesheet" href="style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+
+    <!-- HERO -->
+    <header style="background: none;">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: #04090ac9 ;">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bold" href="index.html">
+      🔧 Plumber services
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown">
+             Services
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="electrician.html">⚡ Electrician</a></li>
+            <li><a class="dropdown-item" href="plumber.html">🔧 Plumber</a></li>
+            <li><a class="dropdown-item" href="carpenter.html">🔨 Carpenter</a></li>
+            <li><a class="dropdown-item" href="painting.html">🖌️ Wood Polish</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- DARK MODE BUTTON -->
+      <button id="darkToggle" class="dark-mode" style="border-radius: 30px;">
+        🌙 Dark Mode
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+    </header>  
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("darkToggle");
+
+  // Load saved mode
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+
+  toggleBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️ Light Mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+});
+</script>
+
+    <br><br><br><br>
+    <section class="intro">
+     <h1>🔧 Plumber services in Karachi</h1> 
+    
+    <p>
+Looking for <strong>professional plumber services in Karachi</strong>?  
+We provide reliable, fast and affordable <strong>plumbing services</strong> for homes,
+offices and commercial buildings. Our experienced plumbers specialize in
+bathroom fitting, pipe installation, leakage repair,
+drain cleaning, water tank repair and complete plumbing maintenance.
+</p>
+</section>
+
+<!-- WORK GALLERY -->
+<section class="gallery">
+    
+    <h2>Our Plumbing Work</h2>
+    <p>Some of our recent plumber projects</p>
+
+    <div class="gallery-box">
+        <div class="img-box">
+            <img src="bathroom-fitting.jpg" alt="Bathroom Plumbing Work">
+            <div class="overlay">Bathroom Fitting</div>
+        </div>
+
+        <div class="img-box">
+            <img src="pipe-installation.jpg" alt="Pipe Installation">
+            <div class="overlay">Pipe Installation</div>
+        </div>
+
+        <div class="img-box">
+            <img src="leakage-repair.jpg" alt="Leakage Repair">
+            <div class="overlay">Water Leakage Repair</div>
+        </div>
+
+        <div class="img-box">
+            <img src="drain-cleaning.jpg" alt="Drain Cleaning Service">
+            <div class="overlay">Drain Cleaning</div>
+        </div>
+
+        <div class="img-box">
+            <img src="drain-cleaning.jpg" alt="Commode Installation">
+            <div class="overlay">Toilet & Commode Installation</div>
+        </div>
+
+        <div class="img-box">
+            <img src="water-motor.jpg" alt="Water Motor Plumbing">
+            <div class="overlay">Water Motor Plumbing</div>
+        </div>
+
+        <div class="img-box">
+            <img src="water-tank.jpg" alt="Water Tank Repair">
+            <div class="overlay">Water Tank Repair</div>
+        </div>
+
+        <div class="img-box">
+            <img src="emergency-plumber.jpg" alt="Emergency Plumbing Service">
+            <div class="overlay">Emergency Plumbing Service</div>
+        </div>
+</section>
+
+<section class="services">
+    
+    <h2>Our Plumber Services</h2>
+    <div class="service-box">
+    <div class="card">🚿 Bathroom Fitting & Installation</div>
+    <div class="card">🏢 Office & Commercial Plumbing</div>
+    <div class="card">🚰 Water Leakage Repair</div>
+    <div class="card">🪠 Drain Cleaning & Blockage Removal</div>
+    <div class="card">🚽 Toilet & Commode Installation</div>
+    <div class="card">💧 Water Tank Repair & Installation</div>
+    <div class="card">🔧 Pipe Installation & Replacement</div>
+    <div class="card">🚿 Shower & Basin Installation</div>
+    <div class="card">🚰 Water Motor Installation & Repair</div>
+    <div class="card">🏠 Home Plumbing Maintenance</div>
+    <div class="card">🏢 Commercial Plumbing Services</div>
+    <div class="card">🔥 Gas Leakage Support (Plumbing)</div>
+    <div class="card">🛁 Bathtub Installation</div>
+    <div class="card">🚰 Kitchen Sink Installation</div>
+    <div class="card">🪜 Sewer Line Cleaning</div>
+    <div class="card">⚙️ Old Pipe Replacement</div>
+    <div class="card">🚨 Emergency Plumber Service</div>
+    <div class="card">🔍 Plumbing Fault Finding</div>
+    <div class="card">💦 Low Water Pressure Fix</div>
+    <div class="card">🛠️ Complete Plumbing Renovation</div>
+    <br><br><br>
+</div>
+</section>
+
+<br><br><br>
+
+<!-- WHY US -->
+<section class="why-us">
+    <h2>Why Choose Us</h2>
+    <ul>
+        <li>✅ Experienced Plumbers</li>
+        <li>✅ Same Day Plumbing Service</li>
+        <li>✅ Affordable Charges</li>
+        <li>✅ Quality Work Guaranteed</li>
+        <li>✅ All Areas of Karachi</li>
+    </ul>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">📞 Contact Us</div>
+        <div class="step">🔍 Inspection</div>
+        <div class="step">🔧 Repair / Installation</div>
+        <div class="step">😊 Customer Satisfaction</div>
+    </div>
+</section>
+ <section class="contact4" id="WhatsApp" >
+        <a href="https://wa.me/03173543834"name='y'>
+          <img src="whatsapp.png" alt="WhatsApp" ></a>
+        <h3 name="y">Contact Us</h3>
+    </section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Need a Plumber Today?</h2>
+    <p>Call or WhatsApp us now for quick plumbing service</p>
+    <a href="https://wa.me/03173543834" class="btn whatsapp">WhatsApp Now</a>
+</section>
+
+
+
+<footer class="footer">
+    
+
+        <!-- ABOUT -->
+         <div class="footer-about">
+        <div class="footer-box">
+            <h3>Karachi Home Services</h3>
+            <p>
+                We provide professional 🔨 carpenter, ⚡ electrician, 🔧 plumber
+                and 🖌️ painting & polish services in all areas of Karachi.
+            </p>
+        </div>
+        </div>
+        <div class="footer-container">
+        <!-- SERVICES -->
+         <!-- <Div class="footer-box1"> -->
+        <div class="footer-box">
+            <h3>Our Services</h3>
+            <ul>
+                <!-- <LI>🏠 Home</LI> -->
+                <li>🔨 Carpenter Services</a></li>
+                <li>⚡ Electrician Services</li>
+                <li>🔧 Plumber Services</li>
+                <li>🖌️ Painting & Polish</li>
+            </ul>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <LI><a href="index.html">🏠 Home</a></LI>
+                <li><a href="electrician.html">⚡ Electrician Services</a ></li>
+                <li><a href="plumber.html">🔧 Plumber Services</a ></li>        
+                <li><a href="carpenter.html">🔨 Carpenter Services</a ></li>
+                <li><a href="painting.html">🖌️ Wood Polish Services</a ></li>
+                <li><a href="contact.html">📞 Contact Us</a ></li>
+                
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <li>📍 Karachi, Pakistan</li>
+            <li><A href="https://wa.me/03173543834" target="_blank">📞 +923173543834 </A></li>
+            <li>⏰ 24/7 Available</li>
+        </div>
+
+    </div>
+    <!-- </Div> -->
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom">
+        <p>© 2026 Karachi Home Services. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
